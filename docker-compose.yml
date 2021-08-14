@@ -1,0 +1,7 @@
+version: '3.4'
+services:
+  miner:
+    build: .
+    volumes:
+    - .:/code
+    restart: unless-stopped
