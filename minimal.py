@@ -14,14 +14,8 @@ import select
 AVAILABLE_PORTS = [2812, 2813, 2814, 2815, 2816]
 soc = None
 
-username = input('Username?\n> ')
-diff_choice = input(
-    'Use lower difficulty? (Y/N) [Leave empty for default of True]\n> ')
-if diff_choice.lower == "n":
-    UseLowerDiff = False
-else:
-    UseLowerDiff = True
-
+username = "ads"
+UseLowerDiff = False
 
 def get_fastest_connection(server_ip: str):
     connection_pool = []
